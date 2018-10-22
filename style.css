@@ -1,0 +1,31 @@
+body {
+  font: 14px "Times New Roman", serif;
+  color: #333333
+}
+
+#main {
+  width: 350px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+#main img {
+  width: 350px;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+button {
+  margin-bottom: 1em;
+}
+
+.error-msg {
+  font-size: 0.8em;
+  color: AA3333;
+}
+
+.hide {
+  display: none;
+}
