@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Leigh & Andy</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <meta name='robots' content='noarchive nocache nosnippet nofollow noimageindex notranslate' />
+  </head>
+  <body onload='chooseImage();'>
+    <div id='main'>
+      <div id='content' class='hide'>
+        <h3>Leigh and Andy are getting married!</h3>
+        <img id='img-1' class='hide' src='images/1.jpg' />
+        <img id='img-2' class='hide' src='images/2.jpg' />
+        <img id='img-3' class='hide' src='images/3.jpg' />
+        <p>Saturday August 3rd, 2019</p>
+        <p>Endicott Estate</p>
+        <p>Dedham, Massachusetts</p>
+        <!-- <button id='show-rsvp' type='button' onclick='showRsvp();'>RSVP</button>
+        <div id='rsvp-form' class='hide'>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc5Rdmphh1mjbhFZfZaoSspN-hS4qDYcFCcyIIq8mBtCKA_VQ/viewform?embedded=true" width="640" height="786" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div> -->
+      </div>
+      <div id='password-form'>
+        <form onsubmit='event.preventDefault(); processPwForm();'>
+          <label for='pw-input'>Password:</label>
+          <input type='password' id='pw-input' />
+          <button type='submit'>Enter</button>
+          <p id='pw-error' class='error-msg hide'>Error: wrong password</p>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      var pw = 'beech';
+      var numImgs = 3;
+
+      function processPwForm() {
+        if (document.getElementById('pw-input').value === pw) {
+          document.getElementById('content').classList.remove('hide');
+          document.getElementById('password-form').classList.add('hide');
+        }
+        else {
+          document.getElementById('pw-error').classList.remove('hide');
+        }
+      }
+
+      function chooseImage() {
+        var pick = Math.floor(Math.random() * numImgs) + 1;
+        console.log(pick);
+        document.getElementById('img-' + pick).classList.remove('hide');
+      }
+
+      function showRsvp() {
+        document.getElementById('rsvp-form').classList.remove('hide');
+        location.href = '#';
+        location.href = '#rsvp-form';
+      }
+    </script>
+  </body>
+</html>
