@@ -31,6 +31,11 @@ body {
   margin-bottom: 20px;
 }
 
+.details > iframe {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
 .date {
   font-weight: bold;
   color: #D90D1A;
@@ -66,11 +71,6 @@ body {
   color: #FC85D1;
 }
 
-iframe {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
 #main {
   width: 400px;
   margin: auto;
@@ -83,7 +83,7 @@ iframe {
 #main img {
   width: 400px;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 p {
