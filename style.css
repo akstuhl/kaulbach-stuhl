@@ -1,16 +1,88 @@
+/* html {
+  background: url(images/mock-orange.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
+
 body {
-  font: 14px "Times New Roman", serif;
-  color: #333333
+  color: #FC85D1;
+}
+
+.names, .announce {
+  font: 18px "Futura", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.names {
+  color: #D90D1A;
+  letter-spacing: 3px;
+}
+
+.announce {
+  color: #FC85D1;
+  letter-spacing: 2px;
+}
+
+.details > * {
+  margin-bottom: 20px;
+}
+
+.date {
+  font-weight: bold;
+  color: #D90D1A;
+}
+
+.locations {
+  display: flex;
+  justify-content: space-evenly;
+  color: #FC85D1;
+}
+
+.event-label {
+  font-style: italic;
+}
+
+.hotel {
+  color: #D90D1A;
+}
+
+.hotel a {
+  color: #FC85D1;
+}
+
+.attire {
+  color: #FC85D1;
+}
+
+.kids {
+  color: #D90D1A;
+}
+
+.registry {
+  color: #FC85D1;
+}
+
+iframe {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #main {
-  width: 350px;
+  width: 400px;
   margin: auto;
-  padding-top: 30px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+
+  text-align: center;
 }
 
 #main img {
-  width: 350px;
+  width: 400px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 p {
@@ -19,11 +91,16 @@ p {
 
 button {
   margin-bottom: 1em;
+  color: #D90D1A;
+}
+
+input {
+  color: #FC85D1;
 }
 
 .error-msg {
   font-size: 0.8em;
-  color: AA3333;
+  color: #D90D1A;
 }
 
 .hide {

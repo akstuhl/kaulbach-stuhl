@@ -5,19 +5,34 @@
     <meta name='robots' content='noarchive nocache nosnippet nofollow noimageindex notranslate' />
   </head>
   <body onload='chooseImage();'>
+  <body>
     <div id='main'>
       <div id='content' class='hide'>
-        <h3>Leigh and Andy are getting married!</h3>
+        <div class='names'>Leigh & Andy</div>
+        <div class='announce'>are getting married!</div>
         <img id='img-1' class='hide' src='images/1.jpg' />
         <img id='img-2' class='hide' src='images/2.jpg' />
         <img id='img-3' class='hide' src='images/3.jpg' />
-        <p>Saturday August 3rd, 2019</p>
-        <p>Endicott Estate</p>
-        <p>Dedham, Massachusetts</p>
-        <!-- <button id='show-rsvp' type='button' onclick='showRsvp();'>RSVP</button>
-        <div id='rsvp-form' class='hide'>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc5Rdmphh1mjbhFZfZaoSspN-hS4qDYcFCcyIIq8mBtCKA_VQ/viewform?embedded=true" width="640" height="786" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-        </div> -->
+
+        <div class='details'>
+          <div class='date'> Saturday August 3rd, 2019 | Dedham, MA </div>
+
+          <div class='locations'>
+            <div class='ceremony'><span class='event-label'>Ceremony:</span><br/>First Church and Parish<br />670 High St<br />Dedham, MA 02026</div>
+
+            <div class='reception'><span class='event-label'>Reception:</span><br />Endicott Estate<br />656 East St<br />Dedham, MA 02026</div>
+          </div>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d29087.13633443793!2d-71.18396021892707!3d42.25157068780682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x89e37f9a7f32206f%3A0x50f69ac0cf1259f9!2sFirst+Church+and+Parish+In+Dedham%2C+670+High+St%2C+Dedham%2C+MA+02026!3m2!1d42.249133199999996!2d-71.1776533!4m5!1s0x89e37f972373c7a3%3A0x13b84f411eda0ada!2sEndicott+Estate%2C+656+East+St%2C+Dedham%2C+MA+02026!3m2!1d42.2394666!2d-71.163614!5e0!3m2!1sen!2sus!4v1549139805319" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+          <div class='hotel'>Hotel rooms are available through <a href='https://www.marriott.com/events/start.mi?id=1547153681315&key=GRP' target='_blank'>Kaulbach-Stuhl Wedding</a> at the Residence Inn in Dedham at a rate of $189/night.</div>
+
+          <div class='attire'>Attire: dressy casual or cocktail</div>
+
+          <div class='kids'>We wish we could host all children, but unfortunately we're only able to invite kids from our immediate family who are in our wedding party. We hope you understand.</div>
+
+          <div class='registry'>RSVP and registry links to come</div>
+        </div>
       </div>
       <div id='password-form'>
         <form onsubmit='event.preventDefault(); processPwForm();'>
