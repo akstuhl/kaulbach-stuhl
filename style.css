@@ -8,10 +8,11 @@
 
 body {
   color: #FC85D1;
+  font: 16px "Futura", sans-serif;
 }
 
 .names, .announce {
-  font: 18px "Futura", sans-serif;
+  font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -90,12 +91,18 @@ p {
 }
 
 button {
+  font: 16px "Futura", sans-serif;
   margin-bottom: 1em;
   color: #D90D1A;
 }
 
 input {
   color: #FC85D1;
+  font: 16px "Futura", sans-serif;
+}
+
+label {
+  font: 16px "Futura", sans-serif;
 }
 
 .error-msg {

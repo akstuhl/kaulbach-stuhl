@@ -49,7 +49,7 @@
       var numImgs = 3;
 
       function processPwForm() {
-        if (document.getElementById('pw-input').value === pw) {
+        if (document.getElementById('pw-input').value.toLowerCase() === pw) {
           document.getElementById('content').classList.remove('hide');
           document.getElementById('password-form').classList.add('hide');
         }
