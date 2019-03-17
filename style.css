@@ -69,6 +69,10 @@ body {
   grid-row: 3;
 }
 
+.six > div {
+  padding: 0 40px;
+}
+
 .names, .announce {
   font-size: 18px;
   font-weight: bold;
@@ -133,6 +137,15 @@ body {
   color: #D90D1A;
 }
 
+.contact {
+  color: #D90D1A;
+  margin-bottom: 60px;
+}
+
+.contact a {
+  color: #D90D1A;
+}
+
 .registry {
   color: #FC85D1;
 }
@@ -175,6 +188,10 @@ label {
   padding: 8px 16px;
   box-shadow: none;
   text-decoration: none;
+}
+
+.rsvp-button a:hover {
+  background-color: #fc520f;
 }
 
 .rehearsal-dinner {
