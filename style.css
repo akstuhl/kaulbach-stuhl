@@ -1,7 +1,7 @@
 body {
   color: #FC85D1;
-  font: 16px "Futura", sans-serif;
-  font-family: Futura;
+  font: 16px Futura, sans-serif;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   overflow-x: hidden;
   margin: 0;
 }
