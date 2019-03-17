@@ -2,8 +2,71 @@ body {
   color: #FC85D1;
   font: 16px Futura, sans-serif;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  overflow-x: hidden;
   margin: 0;
+}
+
+#main {
+  max-width: 900px;
+  margin: auto;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  text-align: center;
+}
+
+.content-grid {
+  max-width: 400px;
+  margin: auto;
+}
+
+.content-grid > div {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 740px) {
+  .content-grid {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .content-grid > div {
+    margin-top: 0;
+  }
+}
+
+.one {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.two {
+  grid-column: 2 / 2;
+  grid-row: 1;
+}
+
+.three {
+  grid-column: 1 / 2;
+  grid-row: 2;
+}
+
+.four {
+  grid-column: 2 / 2;
+  grid-row: 2;
+}
+
+.five {
+  grid-column: 1 / 2;
+  grid-row: 3;
+}
+
+.six {
+  grid-column: 2 / 2;
+  grid-row: 3;
 }
 
 .names, .announce {
@@ -20,6 +83,7 @@ body {
 .announce {
   color: #FC85D1;
   letter-spacing: 2px;
+  margin-bottom: 30px;
 }
 
 .details > * {
@@ -34,6 +98,7 @@ body {
 .date {
   font-weight: bold;
   color: #D90D1A;
+  margin-bottom: 10px;
 }
 
 .locations {
@@ -71,14 +136,6 @@ body {
   color: #FC85D1;
 }
 
-#main {
-  max-width: 400px;
-  margin: auto;
-  padding-top: 75px;
-  padding-bottom: 75px;
-  text-align: center;
-}
-
 #main img {
   width: 400px;
   margin-bottom: 10px;
@@ -105,14 +162,29 @@ label {
   font: 16px "Futura", sans-serif;
 }
 
-button.rsvp-button {
+.rsvp-button {
+  margin-bottom: 35px;
+}
+
+.rsvp-button a {
   background-color: #00604d;
   color: #FFFFFF;
-  margin-top: 10px;
   border: 3px solid #FC85D1;
   border-radius: 5px;
   padding: 8px 16px;
   box-shadow: none;
+  text-decoration: none;
+}
+
+.rehearsal-dinner {
+  width: 370px;
+  margin: auto;
+  border: 3px solid #D90D1A;
+  padding: 12px;
+}
+
+.rehearsal-dinner > div {
+  margin-bottom: 10px;
 }
 
 .error-msg {
