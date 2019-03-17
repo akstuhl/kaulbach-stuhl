@@ -87,7 +87,14 @@ body {
 .announce {
   color: #FC85D1;
   letter-spacing: 2px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+.welcome {
+  color: #00604d;
+  font-style: italic;
+  font-size: 17px;
+  margin-bottom: 20px;
 }
 
 .details > * {
