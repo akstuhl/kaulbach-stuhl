@@ -1,14 +1,8 @@
-/* html {
-  background: url(images/mock-orange.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} */
-
 body {
   color: #FC85D1;
   font: 16px "Futura", sans-serif;
+  overflow-x: hidden;
+  margin: 0;
 }
 
 .names, .announce {
@@ -28,12 +22,12 @@ body {
 }
 
 .details > * {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .details > iframe {
   margin-top: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .date {
@@ -45,6 +39,11 @@ body {
   display: flex;
   justify-content: space-evenly;
   color: #FC85D1;
+}
+
+.locations > div {
+  flex-basis: 0;
+  flex-grow: 1;
 }
 
 .event-label {
@@ -72,18 +71,16 @@ body {
 }
 
 #main {
-  width: 400px;
+  max-width: 400px;
   margin: auto;
   padding-top: 75px;
   padding-bottom: 75px;
-
   text-align: center;
 }
 
 #main img {
   width: 400px;
-  margin-top: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 p {
@@ -94,15 +91,27 @@ button {
   font: 16px "Futura", sans-serif;
   margin-bottom: 1em;
   color: #D90D1A;
+  cursor: pointer;
 }
 
 input {
   color: #FC85D1;
   font: 16px "Futura", sans-serif;
+  width: 100px;
 }
 
 label {
   font: 16px "Futura", sans-serif;
+}
+
+button.rsvp-button {
+  background-color: #00604d;
+  color: #FFFFFF;
+  margin-top: 10px;
+  border: 3px solid #FC85D1;
+  border-radius: 5px;
+  padding: 8px 16px;
+  box-shadow: none;
 }
 
 .error-msg {
@@ -112,4 +121,31 @@ label {
 
 .hide {
   display: none;
+}
+
+.invisible {
+  opacity: 0;
+  z-index: -99;
+}
+
+#modal-backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.5;
+}
+
+#modal-container {
+  position: absolute;
+  top: 150px;
+}
+
+#rsvp-modal {
+  width: 600px;
+  position: relative;
+  left: -100px;
+  min-height: 800px;
 }
