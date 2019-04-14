@@ -141,12 +141,12 @@ body {
 }
 
 .kids {
-  color: #D90D1A;
+  color: #FC85D1;
+  margin-bottom: 35px;
 }
 
 .contact {
   color: #D90D1A;
-  margin-bottom: 60px;
 }
 
 .contact a {
@@ -154,10 +154,6 @@ body {
 }
 
 .registry {
-  color: #FC85D1;
-}
-
-.registry a {
   color: #D90D1A;
 }
 
@@ -204,6 +200,26 @@ label {
 .rsvp-button a:hover {
   background-color: #fc520f;
 }
+
+.registry-button {
+  margin-top: 45px;
+}
+
+.registry-button a {
+  /* background-color: #FC85D1; */
+  color: #00604d;
+  border: 3px solid #00604d;
+  border-radius: 5px;
+  padding: 8px 16px;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.registry-button a:hover {
+  background-color: #FC85D1;
+  color: white;
+}
+
 
 .rehearsal-dinner {
   max-width: 370px;
