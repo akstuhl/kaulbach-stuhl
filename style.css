@@ -157,6 +157,10 @@ body {
   color: #FC85D1;
 }
 
+.registry a {
+  color: #D90D1A;
+}
+
 #main img {
   max-width: 400px;
   margin-bottom: 10px;
